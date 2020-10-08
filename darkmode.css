@@ -1,0 +1,90 @@
+
+* {
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mode-button{
+   position: fixed;
+   top: 50px;
+   left: 50px; 
+}
+
+.wrapper{
+    width: 57vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 21px;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    /*box shadow*/
+    -webkit-box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
+    -moz-box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
+    box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
+    border-radius: 10px;
+    transition: ease-in-out .3s;
+}
+
+.item.light{
+    -webkit-box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
+    -moz-box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
+    box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
+}
+
+.item:hover{
+    -webkit-box-shadow: 10px 10px 5px 3px rgba(220, 209, 187);
+    -moz-box-shadow: 10px 10px 5px 3px rgba(220, 209, 187);
+    box-shadow: 10px 10px 5px 3px rgba(220, 209, 187);
+}
+
+.item.dark.hover{
+    -webkit-box-shadow: 7px 7px 5px 3px rgba(73, 73, 73);
+    -moz-box-shadow: 7px 7px 5px 3px rgba(73, 73, 73);
+    box-shadow: 7px 7px 5px 3px rgba(73, 73, 73);
+}
+
+.light{
+    color: rgb(29, 29, 29);
+    background-color: #fff;
+}
+
+.dark{
+    color:#fff;
+    background-color: rgb(29, 29, 29);
+}
+
+.item.dark{
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 7px 7px 5px 3px rgba(53, 53, 53);
+    -moz-box-shadow: 7px 7px 5px 3px rgba(53, 53, 53);
+    box-shadow: 7px 7px 5px 3px rgba(53, 53, 53);
+}
+
+.item-header{
+    font-size: 28px;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        width: 85vw;
+        margin: auto;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ceecf9;
+    }
+}
